@@ -1,61 +1,74 @@
 doctype
 
-title Cori Tanck - Interior Designer
-meta(name="description" content="Cori Tanck - Interior Designer")
-link(rel="stylesheet" type="text/css" href="/css/slick.css")
-link(rel="stylesheet" type="text/css" href="/css/slick-theme.css")
-link(rel="stylesheet", href="css/index.css", type="text/css")
-link(href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css')
-link(href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css')
-link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css')
-
+title Jade / Sass / Gulp Boilerplate
+meta(name="description" content="Jade Sass Gulp Web Development Starter Boilerplate")
+link(rel="stylesheet", href="css/app.min.css", type="text/css")
 body
 
 
   header
-   h1 Cori Tanck
-   h2 Interior Designer
 
+   a#github(href='https://github.com/GPFAFF/Jade-Sass-Gulp-Boilerplate')
+    img(src='https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png')
+
+   #images
+    img(src="./img/jade-logo-header.svg" alt="Jade Web Development Language Logo")
+    img(src="./img/sass.svg" alt="Sass Styling Web Development Language Logo")
+    img(src="./img/Gulper.png" alt="Gulp Web Development Build Tool Logo")
+
+   h1 Template
 
   nav
-    li nav 1
-    li nav 2
 
+    a(href="https://github.com/GPFAFF/Jade-Sass-Gulp-Boilerplate") Fork Me!
+    a(href="http://jade-lang.com") Jade
+    a(href="http://sass-lang.com/") Sass
+    a(href="http://gulpjs.com") Gulp
+    a(href="https://npmjs.com") Resources
 
   section
     h2 What Am I?
 
-  section.center.slider
-        div
-          img(src='http://placehold.it/350x300?text=1')
-        div
-          img(src='http://placehold.it/350x300?text=2')
-        div
-          img(src='http://placehold.it/350x300?text=3')
-        div
-          img(src='http://placehold.it/350x300?text=4')
-        div
-          img(src='http://placehold.it/350x300?text=5')
-        div
-          img(src='http://placehold.it/350x300?text=6')
+    p  I am a development workflow designed to combine three amazing tools,  Jade, Sass and Gulp.  Speed up your development process by leveraging the compiling power of these dynamos!  Links above to fork this repo along with tutorials about each language.
+
+  section
+    h2 Check out my slider
+
+    p  Responsive Native JS Slider
+
+
+    .slideBox.active
+
+      .slider
+
+        .buttons
+
+        button.previous <
+        .offscreen
+
+
+        button.next >
+        .offscreen
+
+
+        ul.content
+          li.current
+            img(src="" alt="PHOTOS GO HERE!!")
+          li
+            img(src="" alt="PHOTOS AND HERE!!")
+          li
+            img(src="" alt="PHOTOS AND HERE TOO!!")
+          li
+            img(src=""  alt="PHOTOS AND ALSO HERE!!")
 
   footer
-    li footer 1
-    li footer 2
+      p Jade / Sass / Gulp Boilerplate
+        a(href="http://gregpfaff.com") By Greg Pfaff
+
 
 
   script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
-  script(src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
-  script(src="./js/vendor/slick.min.js")
-  script(src="./js/index.js")
-  script.
-    $(document).on('ready', function() {
-      initSlider();
-    });
-
-
-
-
+  script(src="./js/app.min.js")
 
 
 
