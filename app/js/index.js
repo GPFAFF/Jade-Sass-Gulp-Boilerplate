@@ -1,5 +1,5 @@
-var initSlider = function(){
-  $('.photo-container').slick({
+function initSlider(){
+  $('.center.slider').slick({
     dots: true,
     centerMode: true,
     centerPadding: '60px',
@@ -28,9 +28,3 @@ var initSlider = function(){
     ]
   });
 };
-
-$(document).ready(function(){
-  $('.photo-container').slick({
-   initSlider();
-  });
-});
