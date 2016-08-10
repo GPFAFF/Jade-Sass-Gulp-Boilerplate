@@ -10,33 +10,16 @@ html
 
 body
   text-align: center
-  background-color: #ccc
+  background-color: $bg-color
   height: 100%
   width: 100%
   margin: 0 auto
   font: 16px/26px Helvetica, Helvetica Neue, Arial
 
 header
-  background-color: white
+  margin: 0
   padding: 20px
-  color: black
-  text-transform: uppercase
-  font-weight: bold
-  font-size: 50px
-  text-shadow: 3px 3px 3px gray
-
-a
-  color: white
-
 h2
-  color: black
-  text-transform: uppercase
-  font-size: 35px
-  text-shadow: 3px 3px 3px gray
-
-p
-  color: black
-  text-transform: uppercase
   font-size: 20px
   text-shadow: 1px 1px 1px white
   padding: 20px
@@ -75,21 +58,6 @@ nav a:visited
 
 nav a:hover
     text-decoration: underline
-
-#images
-  padding: 50px
-
-#images img:nth-child(1)
-  width: 200px
-
-#images img:nth-child(2)
-  width: 100px
-
-#images img:nth-child(3)
-  width: 50px
-
-section
-  margin-top: 100px
 
 footer
   background-color: white
@@ -159,11 +127,6 @@ button
   margin-bottom: 50px
   background-color: transparent
 
-.next:hover, .previous:hover
-  color: #e44d26
-  transition: 0.4s ease
-  cursor: pointer
-
 .offscreen
   position: absolute
   left: -2000px
@@ -176,19 +139,3 @@ button
       width: 60%
     .slideBox
       height: 300px
-
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width)
-    h1
-      font-size: 50px
-    nav a
-      width: 15%
-
-
-@media (min-width: $desktop-width) and (max-width: $highdef-width)
-    nav a
-      width: 15%
-
-
-
-
